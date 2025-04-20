@@ -1,0 +1,12 @@
+com\batch2\artifact1\controller\RegController.class
+com\batch2\artifact1\controller\BookingController.class
+com\batch2\artifact1\controller\LoginController.class
+com\batch2\artifact1\domain\booking.class
+com\batch2\artifact1\domain\Login.class
+com\batch2\artifact1\repository\BookingRepository.class
+com\batch2\artifact1\service\RegService.class
+com\batch2\artifact1\controller\IndexController.class
+com\batch2\artifact1\repository\RegRepo.class
+com\batch2\artifact1\service\LoginService.class
+com\batch2\artifact1\Artifact1Application.class
+com\batch2\artifact1\repository\LoginRepo.class

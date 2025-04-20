@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Book Car</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff6f8;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: #df7588;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      background: #eaeaea;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 450px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    input, button {
+      display: block;
+      margin-top: 1rem;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    input {
+      background-color: #fff;
+      color: #333;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #8382c2;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6b6abe;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Book Your Car</h2>
+
+  <form th:action="@{/booking-confirmation}" method="get">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="text" name="car" placeholder="Car Model (e.g. Nissan)" required />
+    <input type="date" name="date" required />
+    
+    <button type="submit">Confirm Booking</button>
+  </form>
+
+</body>
+</html>

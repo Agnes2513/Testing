@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Booking Confirmation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff6f8;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+      color: #333;
+    }
+
+    h2 {
+      color: #df7588;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 0.75rem 0;
+      background-color: #eaeaea;
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    strong {
+      color: #8382c2;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #60c1dc;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #4aaac4;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Booking Confirmed!</h2>
+  <p>Your booking details are as follows:</p>
+
+  <p><strong>Name:</strong> <span th:text="${name}"></span></p><br>
+  <p><strong>Email:</strong> <span th:text="${email}"></span></p><br>
+  <p><strong>Car Model:</strong> <span th:text="${car}"></span></p><br>
+  <p><strong>Booking Date:</strong> <span th:text="${date}"></span></p>
+
+  <br><br>
+  <a href="/">Go back to Home</a>
+
+</body>
+</html>
